@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<h1>Student Registration form</h1>
+<form>
+<p>
+<label>Name
+<input type="text" name="student_name" required>
+</label>
+</p>
+
+
+<label>Date of birth
+<input type="datetime-local" name="dob" required>
+</label>
+</p>
+<fieldset>
+<legend>Gender</legend>
+<p><label> <input type="radio" name="taxi" required value="m"> Male </label></p>
+<p><label> <input type="radio" name="taxi" required value="f"> Female </label></p>
+</fieldset>
+<fieldset>
+<legend>Graduation degree</legend>
+<p><label> <input type="checkbox" name="extras" value="baby"> BTech </label></p>
+<p><label> <input type="checkbox" name="extras" value="wheelchair"> BSc
+</label></p>
+<p><label> <input type="checkbox" name="extras" value="tip"> BBA </label></p>
+<p><label> <input type="checkbox" name="extras" value="tip"> BA </label></p>
+<p><label> <input type="checkbox" name="extras" value="tip"> BCom </label></p>
+<p><label> <input type="checkbox" name="extras" value="tip"> Others </label></p>
+</fieldset>
+<p>
+<label>Email
+<input type="email" name="email_address">
+</label>
+</p>
+<p>
+<p>
+<label>Address
+<input type="textbox" name="phone_number">
+</label>
+</p>
+<p>
+<label>Division
+<select id="pickup_place" name="pickup_place">
+<option value="" selected="selected">Select One</option>
+<option value="office" >One</option>
+<option value="town_hall" >Two</option>
+<option value="telepathy" >Three</option>
+</select>
+</label>
+</p>
+
+<legend><b>Interests</b></legend>
+<p><label> <input type="checkbox" name="extras" value="baby"> Finance </label></p>
+<p><label> <input type="checkbox" name="extras" value="wheelchair"> HR
+</label></p>
+<p><label> <input type="checkbox" name="extras" value="tip"> MArketing </label></p>
+<p><label> <input type="checkbox" name="extras" value="tip"> System </label></p>
+<p><label> <input type="checkbox" name="extras" value="tip"> operations</label></p>
+<p><label> <input type="checkbox" name="extras" value="tip"> economics</label></p>
+</fieldset>
+<p>
+<label>SOP
+<textarea name="comments" maxlength="500"></textarea>
+</label>
+</p>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+  Select image to upload:
+  <input type="file" name="fileToUpload" id="fileToUpload">
+  <input type="submit" value="Upload Image" name="submit">
+</form>
+<p>
+<legend>Declaration</legend>
+<p><label> <input type="checkbox" name="extras" value="baby"> I agree that above information is true to my knowledge</label></p>
+<p><button>Submit</button></p>
+</form>
+</html>
